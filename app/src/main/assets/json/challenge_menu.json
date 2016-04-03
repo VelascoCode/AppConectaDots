@@ -1,0 +1,22 @@
+{
+  "challenges": [
+    {
+      "name": "Reto Contado 1 en 1",
+      "review": "Contando de 1 en 1 al ...",
+      "src_img": "numbers",
+      "type":"sequentialChallenge"
+  },
+    {
+      "name": "Reto Sumas",
+      "review": "Uniendo puntos con sumas",
+      "src_img": "space",
+      "type":"additionChallenge"
+  },
+    {
+      "name": "Reto Sumas y Símbolos",
+      "review": "Uniendo puntos con sumas y símbolos",
+      "src_img": "jungle",
+      "type":"additionFigureChallenge"
+  }
+  ]
+}
