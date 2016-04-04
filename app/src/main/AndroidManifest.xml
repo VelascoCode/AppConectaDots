@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SequentialChallenge"></activity>
+        <activity android:name=".activities.SequentialChallenge" />
+        <activity android:name=".activities.AdditionChallenge"></activity>
     </application>
 
 </manifest>

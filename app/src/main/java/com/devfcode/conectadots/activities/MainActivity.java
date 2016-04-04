@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements ChallengeMenuAdap
                 startActivity(new Intent(this, SequentialChallenge.class));
                 break;
             case "additionChallenge":
-                startActivity(new Intent(this, SequentialChallenge.class));
+                startActivity(new Intent(this, AdditionChallenge.class));
                 break;
             case "additionFigureChallenge":
                 startActivity(new Intent(this, SequentialChallenge.class));
