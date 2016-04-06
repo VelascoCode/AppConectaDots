@@ -2,6 +2,7 @@ package com.devfcode.conectadots.generators;
 
 import android.content.Context;
 
+import com.devfcode.conectadots.models.addition.AdditionDotCollection;
 import com.google.gson.Gson;
 import com.devfcode.conectadots.models.sequential.SequentialDotCollection;
 import com.devfcode.conectadots.utils.json.JSONManager;
@@ -23,5 +24,12 @@ public class FigureGenerator {
         SequentialDotCollection sequentialDotCollection = gson.fromJson(jsonObject.toString(), SequentialDotCollection.class);
         return sequentialDotCollection;
 
+    }
+
+    public static AdditionDotCollection getAdditionDotCollection(Context context,String jsonFileName){
+        JSONObject jsonObject = JSONManager.loadJSONObjectFromAsset(context, jsonFileName);
+        Gson gson = new Gson();
+        AdditionDotCollection additionDotCollection=gson.fromJson(jsonObject.toString(),AdditionDotCollection.class);
+        return additionDotCollection;
     }
 }

@@ -9,8 +9,8 @@ android:orientation="vertical"
 tools:context="com.devfcode.conectadots.activities.AdditionChallenge">
 
 
-<com.devfcode.conectadots.utils.draw.DrawingView
-    android:id="@+id/drawing"
+<com.devfcode.conectadots.utils.draw.AdditionDrawingView
+    android:id="@+id/addition_drawing"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_marginBottom="3dp"
@@ -19,7 +19,6 @@ tools:context="com.devfcode.conectadots.activities.AdditionChallenge">
     android:layout_marginTop="3dp"
     android:layout_weight="1"
     android:background="#FFFFFFFF"/>
-    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,23 +30,29 @@ tools:context="com.devfcode.conectadots.activities.AdditionChallenge">
             <TextView
                 android:id="@+id/first_operation_first_place"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                fontPath="fonts/LondrinaSketch-Regular.ttf"/>
             <TextView
-                android:id="@+id/first_operation_first_simbol"
+                android:id="@+id/first_operation_first_symbol"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/first_operation_first_place"/>
             <TextView
                 android:id="@+id/first_operation_second_place"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/first_operation_first_symbol"/>
             <TextView
-                android:id="@+id/first_operation_equal_simbol"
+                android:id="@+id/first_operation_equal_symbol"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/first_operation_second_place"/>
             <EditText
                 android:id="@+id/first_operation_first_result"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:layout_toRightOf="@+id/first_operation_equal_symbol"/>
         </RelativeLayout>
     </LinearLayout>
     <LinearLayout
@@ -63,21 +68,26 @@ tools:context="com.devfcode.conectadots.activities.AdditionChallenge">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/second_operation_first_simbol"
+                android:id="@+id/second_operation_first_symbol"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/second_operation_first_place"/>
             <TextView
                 android:id="@+id/second_operation_second_place"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/second_operation_first_symbol"/>
             <TextView
-                android:id="@+id/second_operation_equal_simbol"
+                android:id="@+id/second_operation_equal_symbol"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/second_operation_second_place"/>
             <EditText
                 android:id="@+id/second_operation_first_result"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:layout_toRightOf="@+id/second_operation_equal_symbol"/>
         </RelativeLayout>
     </LinearLayout>
 

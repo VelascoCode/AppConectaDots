@@ -166,15 +166,6 @@ public class DrawingView extends View implements SequentialFigure.SequentialFigu
     public void drawFigure()
     {
         new SequentialFigure(this.getContext(),this).execute();
-        //sequentialDotCollection= FigureGenerator.getSequentialDotCollection(this.getContext(), Constants.SEQUENTIAL_DOTS_JSON_NAME_FILE);
-        //sequentialDots = sequentialDotCollection.sequential_dots;
-        /*for(SequentialDot sd:sequentialDots)
-        {
-            Log.w(TAG, "X: " + sd.dotX + " Y:" + sd.dotY);
-            //Imagen de puntos
-            drawCanvas.drawCircle(sd.dotX,sd.dotY,23,canvasPaint);
-            drawCanvas.drawText(sd.value, sd.dotX+30, sd.dotY+10, canvasPaint);
-        }*/
     }
 
     public void validateTouchLine()

@@ -27,7 +27,7 @@ public class splash extends Activity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.splash);
-        reproductor=MediaPlayer.create(this,R.raw.sound);
+        reproductor=MediaPlayer.create(this,R.raw.juego);
         reproductor.setLooping(true);
         reproductor.start();
 
